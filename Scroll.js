@@ -1,7 +1,8 @@
 
     const scrollAuto = (classname)=>{
         //newmsessage height
-        const divContainer = document.querySelector(${classname})  // your class replace
+        cosnt containerClass = classname
+        const divContainer = document.querySelector(`.${containerClass}`)  // your class replace
         /** chatting-msg is the container which goes scroll function so replace it with your div or container */
         const newMessageLastChild= divContainer.lastElementChild
         const newMessagestyle = getComputedStyle(newMessageLastChild)
