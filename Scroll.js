@@ -5,6 +5,7 @@
         const divContainer = document.querySelector(`.${containerClass}`)  // your class replace
         /** chatting-msg is the container which goes scroll function so replace it with your div or container */
         const newMessageLastChild= divContainer.lastElementChild
+        if (newMessageLastChild == null ) return null
         const newMessagestyle = getComputedStyle(newMessageLastChild)
         const marginBtn = parseInt(newMessagestyle.marginBottom)
     
